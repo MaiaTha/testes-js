@@ -14,14 +14,17 @@
     
    function findNumber(number) {
        var groupNumber= [11, 22, 33, 44, 55]
+       var isNumber = false;
        
        groupNumber.map(function(element){
            if(element == number) {
-               return console.log("aqui o numero ,", element)
+                isNumber = true;
+                return console.log("aqui o numero ,", element)
            } else if ( element !== number) {
                return console.log("esse numero não esta disponivel")
            }
        })
+       return isNumber;
    }
    console.log("Teste 1 - Tem que retornar false");
    console.log(findNumber(2) == true);
