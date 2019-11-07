@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 03</title>
+</head>
+<body>
+    
+</body>
+
+<script type="text/javascript">
+    
+   function findNumber(number) {
+       var groupNumber= [11, 22, 33, 44, 55]
+       
+       groupNumber.map(function(element){
+           if(element == number) {
+               return console.log("aqui o numero ,", element)
+           } else if ( element !== number) {
+               return console.log("esse numero não esta disponivel")
+           }
+       })
+   }
+   console.log(findNumber(44));
+</script>
+</html>
